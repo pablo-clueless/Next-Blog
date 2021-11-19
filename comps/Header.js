@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header>
             <div className="container flex">
-                <Link href='/'>StaticBlog</Link>
+                <Link href='/'>Pablo's Blog</Link>
                 <ul>
                     <li>
                     <a target='_blank' rel='noopener noreferrer' href='https://okunolasamson.netlify.app'>
