@@ -7,7 +7,6 @@ class MyDocument extends Document {
       <Html lang='en'>
         <Head>
             <meta charset='utf-8' />
-            <meta name='viewport' content='width=device-width, initial-scale=1' />
             <meta name='keywords' content='nextjs, firebase, markdown, nextjs blog, nextjs, firebase and markdown blog' />
         </Head>
         <body>

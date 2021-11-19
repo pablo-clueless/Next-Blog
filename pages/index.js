@@ -10,6 +10,7 @@ export default function Home({posts}) {
     <>
     <Head>
       <title>Blog | Home</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
     </Head>
     <div className="posts">
       {posts.map((post, i) => (

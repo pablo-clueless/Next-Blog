@@ -4,7 +4,6 @@ import matter from 'gray-matter'
 import Head from 'next/head'
 import Link from 'next/link'
 import Markdown from 'marked-react'
-import { FaTwitter } from 'react-icons/fa'
 
 const PostPage = ({ frontmatter: { title, date, cover_image, author, author_contact}, slug, content}) => {
 
@@ -12,6 +11,7 @@ const PostPage = ({ frontmatter: { title, date, cover_image, author, author_cont
         <>
         <Head>
             <title>Blog | {title}</title>
+            <meta name='viewport' content='width=device-width, initial-scale=1' />
         </Head>
         <Link href='/'>
             <a className="btn btn-back">Go Back</a>
