@@ -84,6 +84,7 @@ header ul {
   display: inline-block;
   background: var(--sec);
   color: var(--light);
+  font-family: 'Ubuntu', sans-serif;
   border: 1px solid transparent;
   padding: 8px 16px;
   transition: 0.3s all ease-in-out;
@@ -100,9 +101,14 @@ header ul {
 }
 
 .btn-back {
-  background: var(--dark);
+  background: var(--error);
   color: var(--light);
   margin-bottom: 20px;
+}
+
+.btn-back:hover {
+  border: 1px solid var(--error);
+  color: var(--error);
 }
 
 .posts {
@@ -133,6 +139,17 @@ header ul {
   padding: 3px 10px;
 }
 
+.post-contact {
+  color: var(--sec);
+  font-size: 1.5rem;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.post-body {
+  margin-top: 15px;
+}
+
 .post-body ul, ol {
   font-size: 110%;
   line-height: 2.3;
@@ -141,7 +158,8 @@ header ul {
 }
 
 .post-body pre {
-  background: var(--pry);
+  background: var(--dark);
+  color: var(--light);
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
