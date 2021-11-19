@@ -64,7 +64,7 @@ const averageOfThree = (a, b, c) => {
 }
 ```
 
-Both code will evaluate t same result. Wit that out of the way, let's see the Array methods.
+Both code will evaluate to same result. With that out of the way, let's see the Array methods.
 
 ### Array Methods
 
