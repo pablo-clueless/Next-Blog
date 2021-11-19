@@ -11,7 +11,7 @@ const PostPage = ({ frontmatter: { title, date, cover_image, author, author_cont
     return (
         <>
         <Head>
-            <title>Blog | {slug}</title>
+            <title>Blog | {title}</title>
         </Head>
         <Link href='/'>
             <a className="btn btn-back">Go Back</a>
