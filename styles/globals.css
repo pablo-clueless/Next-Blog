@@ -18,11 +18,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  overflow-x: hidden;
 }
 
 a {
