@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript Objects'
 date: 'Nov 23 2021'
-excerpts: ''
+excerpts: 'Introduction to JavaScript Object Syntax for beginners.'
 author: 'Samson Okunola'
 author_contact: 'https://twitter.com/pablo-clueless'
 cover_image: '/images/posts/js-objects.png'
@@ -162,5 +162,3 @@ If you log any of the props of the `object` object (funny I named the object "ob
 ## Conclusion
 
 This article covers the basics of objects in JavaScript but there's still more to learn. Try playing around with objects - you could create an entire array of objects just like an API and try to access to access it props.
-
-Feel free to drop comments, questions and suggestions, I'll try to reply as soon as I can.
