@@ -201,4 +201,4 @@ You see that the `finally` block runs no matter your choice. The `finally` claus
 
 Like I always say, practice is everything. If you read docs, articles and watch tutorials videos but you don't practice, you might as well stop. Learn in little chunks and practice what you learn, be consistent about it. Happy holidays to you and keeping coding.
 
-[Buy Me A Coffee](https://buymeacoffee.com/pablo_clueless)
+<https://buymeacoffee.com/pablo_clueless>
