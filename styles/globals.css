@@ -99,13 +99,13 @@ header ul {
   outline: none;
 }
 
-.btn:hover {
+/* .btn:active {
   background: transparent;
   color: var(--sec);
   border: 1px solid var(--sec);
-}
+} */
 
-/* .btn:hover {
+.btn:hover {
   animation: jelly 0.5s;
 }
 
@@ -121,7 +121,7 @@ header ul {
   75% {
     transform: scale(0.95, 1.05);
   }
-} */
+}
 
 .btn-back {
   background: var(--error);
@@ -129,10 +129,10 @@ header ul {
   margin-bottom: 20px;
 }
 
-.btn-back:hover {
+/* .btn-back:hover {
   border: 1px solid var(--error);
   color: var(--error);
-}
+} */
 
 .posts {
   display: grid;
@@ -145,6 +145,11 @@ header ul {
 .card {
   padding: 15px;
   border: 1px solid var(--pry);
+  transition: 0.3s all ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(0.98);
 }
 
 .card-page {
@@ -186,6 +191,12 @@ header ul {
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
+}
+
+.post-body a {
+  font-weight: 600;
+  color: var(--pry);
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 500px) {
