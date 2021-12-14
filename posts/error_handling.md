@@ -5,7 +5,7 @@ excerpts: 'Handling errors using the "try..
 catch" block.'
 author: 'Samson Okunola'
 author_contact: 'https://twitter.com/pablo-clueless'
-cover_image: './images/posts/error_handling.png'
+cover_image: '/images/posts/error_handling.png'
 ---
 Errors are inevitable when executing codes. Different errors will occur for different reasons - typos, bad network connection, invalid user inputs and so on. We can't control all variables in our app but we can control our app's response to them. We will learn how to handle errors in this article.
 

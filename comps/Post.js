@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Post = ({post}) => {
     return (
         <div className='card'>
-            <img src={post.frontmatter.cover_image} alt="" />
+            <Image src={post.frontmatter.cover_image} alt={post.title} width={350} height={250} />
             <div className="post-date">{post.frontmatter.author} | {post.frontmatter.date}</div>
             <h3>{post.frontmatter.title}</h3>
             <p>{post.frontmatter.excerpts}</p>

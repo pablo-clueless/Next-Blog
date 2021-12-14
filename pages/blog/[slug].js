@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import Markdown from 'marked-react'
 
 const PostPage = ({ frontmatter: { title, date, cover_image, author, author_contact}, slug, content}) => {
@@ -22,7 +23,7 @@ const PostPage = ({ frontmatter: { title, date, cover_image, author, author_cont
                 <h3>{author}</h3>
                 <p>Posted on {date}</p>
             </div>
-            <img src={cover_image} alt={slug} />
+            <Image src={cover_image} alt={title} width={800} height={400} layout='responsive' />
             <div className="post-body">
                 <Markdown>{content}</Markdown>
             </div>

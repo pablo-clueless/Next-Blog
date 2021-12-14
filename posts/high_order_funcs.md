@@ -4,7 +4,7 @@ date: 'Nov 19 2021'
 excerpts: 'Destructure arrays like a boss'
 author: 'Samson Okunola'
 author_contact: 'https://twitter.com/pablo-clueless'
-cover_image: './images/posts/hof.jpg'
+cover_image: '/images/posts/hof.jpg'
 ---
 Using `for` and `while` loops is kinda outdated. It can get bloated and messy especially when dealing with large programs giving room for bugs to hide, it can be restricting and it is SLOW because it has to read the length of the entire array at every iteration of the loop. And in comes, *drum roll please*... Higher Order Array Methods to the rescue.
 

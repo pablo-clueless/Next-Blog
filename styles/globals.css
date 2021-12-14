@@ -99,12 +99,6 @@ header ul {
   outline: none;
 }
 
-/* .btn:active {
-  background: transparent;
-  color: var(--sec);
-  border: 1px solid var(--sec);
-} */
-
 .btn:hover {
   animation: jelly 0.5s;
 }
@@ -128,11 +122,6 @@ header ul {
   color: var(--light);
   margin-bottom: 20px;
 }
-
-/* .btn-back:hover {
-  border: 1px solid var(--error);
-  color: var(--error);
-} */
 
 .posts {
   display: grid;

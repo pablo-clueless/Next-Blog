@@ -4,7 +4,7 @@ date: 'Dec 4 2021'
 excerpts: 'An introduction to modules'
 author: 'Samson Okunola'
 author_contact: 'https://twitter.com/pablo-clueless'
-cover_image: './images/posts/modules.jpg'
+cover_image: '/images/posts/modules.jpg'
 ---
 ## Summary
 
