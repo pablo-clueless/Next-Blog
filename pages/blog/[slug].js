@@ -5,8 +5,22 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import Markdown from 'marked-react'
+import Comments from '../../comps/Comments'
+
+import { useEffect, useState } from 'react'
 
 const PostPage = ({ frontmatter: { title, date, cover_image, author, author_contact}, slug, content}) => {
+    const [comments,setComments] = useState('')
+    
+    const fetchData = async () => {
+        const res = await fetch('/api/comments')
+        const data = await res.json()
+        setComments(data)
+    }
+
+    useEffect(() => {
+        fetchData()
+    },[])
 
     return (
         <>
@@ -27,6 +41,7 @@ const PostPage = ({ frontmatter: { title, date, cover_image, author, author_cont
             <div className="post-body">
                 <Markdown>{content}</Markdown>
             </div>
+            <Comments />
         </div>
         </>
     )
