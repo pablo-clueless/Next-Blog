@@ -7,20 +7,20 @@ import Image from 'next/image'
 import Markdown from 'marked-react'
 import Comments from '../../comps/Comments'
 
-import { useEffect, useState } from 'react'
+// import { useEffect, useState } from 'react'
 
 const PostPage = ({ frontmatter: { title, date, cover_image, author, author_contact}, slug, content}) => {
-    const [comments,setComments] = useState('')
+    // const [comments,setComments] = useState('')
     
-    const fetchData = async () => {
-        const res = await fetch('/api/comments')
-        const data = await res.json()
-        setComments(data)
-    }
+    // const fetchData = async () => {
+    //     const res = await fetch('/api/comments')
+    //     const data = await res.json()
+    //     setComments(data)
+    // }
 
-    useEffect(() => {
-        fetchData()
-    },[])
+    // useEffect(() => {
+    //     fetchData()
+    // },[])
 
     return (
         <>
