@@ -13,21 +13,16 @@ const Comments = () => {
             return
         }
 
-        const commentRef = {
-            comment,
-            id: uuidv4()
-        }
-
        const res = await fetch('/api/comments', {
            method: 'POST',
-           body: JSON.stringify(commentRef),
            headers: {
-               'Content-Type': 'application/json'
-           }
+            'Content-Type': 'application/json'
+            },
+           body: JSON.stringify(comment)
        })
        
        const data = await res.json()
-
+       console.log(data)
        setComment('')
     }
     return (

@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.24.0",
     "firebase": "^9.6.1",
+    "fs": "0.0.1-security",
     "gray-matter": "^4.0.3",
     "marked": "^4.0.3",
     "marked-react": "^0.3.0",
