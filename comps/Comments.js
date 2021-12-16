@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
-import axios from 'axios'
+import React from 'react'
+import { useState } from 'react'
 
 const Comments = () => {
-    const [comment,setComment] = useState('')
+    const [comment,setComment] = useState("")
     
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault()
 
         if(!comment) {
@@ -13,18 +12,20 @@ const Comments = () => {
             return
         }
 
-       const res = await fetch('/api/comments', {
-           method: 'POST',
-           headers: {
-            'Content-Type': 'application/json'
-            },
-           body: JSON.stringify(comment)
-       })
+    //    const res = fetch('https://pablos-blog-backend.herokuapp.com//api/comments', {
+    //        method: 'POST',
+    //        headers: {
+    //         'Content-Type': 'application/json'
+    //         },
+    //        body: JSON.stringify(comment)
+    //    })
        
-       const data = await res.json()
-       console.log(data)
+    //    const data = res.json()
+    //    console.log(data)
+        console.log(comment)
        setComment('')
     }
+
     return (
         <div className='comment'>
             <form onSubmit={handleSubmit}>
