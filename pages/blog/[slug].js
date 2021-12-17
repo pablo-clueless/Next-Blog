@@ -11,7 +11,6 @@ import Comments from '../../comps/Comments'
 
 const PostPage = ({ frontmatter: { title, date, cover_image, author, author_contact}, slug, content}) => {
  
-
     return (
         <>
         <Head>
