@@ -5,9 +5,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import Markdown from 'marked-react'
-
-// import { useEffect, useState } from 'react'
-import Comments from '../../comps/Comments'
+// import BMACWidget from '../../comps/BMACWidget'
+import BMACButton from '../../comps/BMACButton'
 
 const PostPage = ({ frontmatter: { title, date, cover_image, author, author_contact}, slug, content}) => {
  
@@ -31,7 +30,8 @@ const PostPage = ({ frontmatter: { title, date, cover_image, author, author_cont
                 <Markdown>{content}</Markdown>
             </div>
         </div>
-        <Comments />
+        <BMACButton />
+        {/* <BMACWidget /> */}
         </>
     )
 }
