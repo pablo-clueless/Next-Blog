@@ -6,7 +6,7 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-            <meta charset='utf-8' />
+            <meta charSet='utf-8' />
             <meta name='keywords' content='nextjs, firebase, markdown, nextjs blog, nextjs, firebase and markdown blog' />
         </Head>
         <body>
