@@ -9,10 +9,6 @@ cover_image: '/images/posts/error_handling.png'
 ---
 Errors are inevitable when executing codes. Different errors will occur for different reasons - typos, bad network connection, invalid user inputs and so on. We can't control all variables in our app but we can control our app's response to them. We will learn how to handle errors in this article.
 
-## Prerequisite
-
------------------------------------------------------------------------------------------
-
 ## What is an Error??
 
 Errors are statements that don't let the program run properly. They could be syntax error, runtime error, input error etc. Not to be confused with the `Error` object which is thrown to halt a program when our scripts encounter an error. Basically, an `Error` object is thrown when our scripts encounter errors in our program. You can create an `Error` object like so:
