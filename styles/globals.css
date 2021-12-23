@@ -95,10 +95,6 @@ header ul {
   transition: 0.3s all ease-in-out;
 }
 
-.btn:focus {
-  outline: none;
-}
-
 .btn:hover {
   animation: jelly 0.5s;
 }
@@ -138,7 +134,7 @@ header ul {
 }
 
 .card:hover {
-  transform: translateY(-5px) scale(0.98);
+  transform: scale(0.98);
 }
 
 .card-page {
