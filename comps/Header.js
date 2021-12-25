@@ -8,7 +8,7 @@ const Header = () => {
                 <Link href='/'>Pablo's Blog</Link>
                 <ul>
                     <li>
-                    <a target='_blank' rel='noopener noreferrer' href='https://okunolasamson.netlify.app'>
+                    <a target='_blank' rel='noopener noreferrer' href='https://okunolasamson.vercel.app'>
                         <FaGlobe />
                     </a>
                     </li>
