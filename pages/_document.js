@@ -8,6 +8,7 @@ class MyDocument extends Document {
         <Head>
             <meta charSet='utf-8' />
             <meta name='keywords' content='nextjs, firebase, markdown, nextjs blog, nextjs, firebase and markdown blog' />
+            <link rel='shortcut icon' href='/branding.png' />
         </Head>
         <body>
           <Main />
