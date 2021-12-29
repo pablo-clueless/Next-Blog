@@ -13,7 +13,7 @@ const PostPage = ({ frontmatter: { title, date, cover_image, author, author_cont
     return (
         <>
         <Head>
-            <title>Blog | {title}</title>
+            <title>Pablos&apos;Blog | {title}</title>
             <meta name='viewport' content='width=device-width, initial-scale=1' />
         </Head>
         <Link href='/'>
