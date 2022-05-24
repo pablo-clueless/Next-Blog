@@ -13,8 +13,6 @@ Wow! It's been quite a while and it feels good to write again. We're going to be
 
 Basic knowledge of CSS3 is all that is required
 
----------------------------------------------------------------------------------------------------------------
-
 ## What is a media query in CSS?
 
 A media query consists of a **media type** and can contain one or more expressions, which will return a Boolean value, that is, evaluate to true or false. A media query returns true when the specified media type matches the devices on which the document(your web page) is being displayed and all media features compute to true. It is basically setting conditions for certain styles in your code to take effect. Media queries are useful for when you want to modify certain elements on your web page depending on general type(such as print vs screen) or specific characteristics and parameters(such as screen resolution). Media queries have lots of applications but the basic includes the following:

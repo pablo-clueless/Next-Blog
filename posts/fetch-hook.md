@@ -9,7 +9,7 @@ cover_image: '/images/posts/react-hook.webp'
 
 Hi guys, I've been very busy getting things done and it feels great to be here again. I don't like reinventing the wheels, I also like doing things my own way so here is a simple hook using `fetch`, which is similar to Axios but a lot more convenient if you ask me. You skip writing the `.then()` and `.catch` over and over again.
 
-## Prerequisite
+## Prerequisites
 
 You need to be familiar with state management and React hooks. I'm going to use this opportunity to explain some of the React hooks.
 
