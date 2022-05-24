@@ -52,7 +52,6 @@ Navbar
 */
 header {
   width: 100%;
-  height: 70px;
   background: var(--light);
   color: var(--pry);
   padding: 10px 5px;
@@ -174,6 +173,16 @@ More global CSS
   margin-bottom: 20px;
 }
 
+#scroll-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: var(--sec);
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) width;
+  z-index: 2;
+}
+
 /*
 ================
 Post and Card
@@ -193,14 +202,21 @@ Post and Card
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
   align-items: center;
-  padding: 15px;
+  padding: 1rem 0.5rem;
   border: 1px solid var(--pry);
   transition: 0.3s all ease-in-out;
 }
 
 .card:hover {
   transform: scale(0.98);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 0;
 }
 
 .card-page {
@@ -212,7 +228,6 @@ Post and Card
 }
 
 .post-date {
-  width: 99%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -324,12 +339,21 @@ Media queries
     grid-template-columns: 1fr;
   }
 
+  .post-date {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   header a {
     font-size: 0.9rem;
   }
 
   header ul {
     width: 30%;
+  }
+
+  .card-body {
+    font-size: 0.9rem;
   }
 
   .comment {

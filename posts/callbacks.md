@@ -1,5 +1,5 @@
 ---
-title: "Callback Funtcions"
+title: "Callback Functions"
 date: '20/12/2021'
 excerpts: "The what, how, why and when of callback function."
 author: 'Samson Okunola'

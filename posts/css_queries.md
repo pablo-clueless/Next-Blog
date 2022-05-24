@@ -112,5 +112,3 @@ To limit the styles to devices with a screen, you can chain the media features t
 ## Conclusion
 
 CSS is great but it can't get pretty confusing. This is not to discourage you but to challenge you to be good at it, or at least be good enough to get by and make great designs. So, start implementing media queries in your projects as from now. Please feel free to comment, make suggestions and like my content. Thanks for reading and happy coding.
-
-%[https://buymeacoffee.com/pablo_clueless]

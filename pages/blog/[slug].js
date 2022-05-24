@@ -5,10 +5,40 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import Markdown from 'marked-react'
-// import BMACWidget from '../../comps/BMACWidget'
+import { useEffect } from 'react'
+
 import BMACButton from '../../comps/BMACButton'
 
+
 const PostPage = ({ frontmatter: { title, date, cover_image, author, author_contact}, slug, content}) => {
+    useEffect(() => {
+        const scrollLine = document.getElementById('scroll-line')
+
+        const fillScrollBar = () => {
+            const windowHeight = innerHeight
+            const fullHeight = document.body.clientHeight
+            const scrolled = scrollY
+            const percentScrolled = (scrolled/ (fullHeight - windowHeight)) * 100
+            scrollLine.style.width = `${percentScrolled}%`
+        }
+
+        const debounce = (func, wait = 15, immediate) => {
+        var timeout
+        return function () {
+            var context = this, args = arguments
+            var later = function() {
+                timeout = null
+                if(!immediate) func.apply(context, args)
+            }
+            var callNow = immediate && !timeout
+            clearTimeout(timeout)
+            timeout = setTimeout(later, wait)
+            if(callNow) func.apply(context, args)
+        }
+    }
+        window.addEventListener('scroll', debounce(fillScrollBar))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
  
     return (
         <>
@@ -16,6 +46,7 @@ const PostPage = ({ frontmatter: { title, date, cover_image, author, author_cont
             <title>Pablos&apos;Blog | {title}</title>
             <meta name='viewport' content='width=device-width, initial-scale=1' />
         </Head>
+        <div id='scroll-line'></div>
         <Link href='/'>
             <a className="btn btn-back">Go Back</a>
         </Link>

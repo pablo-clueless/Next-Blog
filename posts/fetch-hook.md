@@ -205,5 +205,3 @@ export default App
 ```
 
 I hope this article has been helpful to you in some ways. You can create hooks for several things which ranges from setting the state of a particular element of your project throughout your entire app(referred to as context) to managing user inputs. You can check out the official React docs at [Building Your Own Hooks](https://reactjs.org/docs/hooks-custom.html) on how you can create your own custom hook. Please drop your comments, suggestions, and questions and I'll be glad to respond as soon as possible. Thanks for reading and happy coding.
-
-%[https://www.buymeacoffee.com/pablo_clueless]

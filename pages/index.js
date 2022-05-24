@@ -14,9 +14,8 @@ export default function Home({posts}) {
     const handleSearch = (e) => {
       setQuery(e.target.value)
       
-      const slugs = posts.map(post => { return post.slug })
-      const result = slugs.find(slug => slug.includes(query))
-      console.log(result)
+      const result = posts.filter(post => post.slug.includes(query))
+      setResult(result)
     }
 
   return (
@@ -26,11 +25,14 @@ export default function Home({posts}) {
       <meta name='viewport' content='width=device-width, initial-scale=1' />
     </Head>
     <form className='form'>
-      <input disabled type='text' value={query} onChange={handleSearch} onFocus={() => setIsSearching(true)} onBlur={() => setIsSearching(false)} placeholder='Search...' />
+      <input type='text' value={query} onChange={handleSearch} onFocus={() => setIsSearching(true)} onBlur={() => setIsSearching(false)} placeholder='Search...' />
     </form>
     {isSearching ?
     <div className='search-result'>
-      Searching...
+      <h5>Results</h5>
+      {result && result.map(item  => (
+        <Post post={item} key={item.slug} />
+      ))}
     </div> :
     <div className="posts">
       {posts.map(post => (
