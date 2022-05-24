@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Ubuntu:wght@300;400&display=swap');
+
+
+/*
+================
+Global CSS
+================
+*/
+:root {
+  --error: #e53721;
+  --success: #02e53f;
+  --light: #f8f9ff;
+  --dark: #445566;
+  --pry: #b669c5;
+  --sec: #7377d6;
+  --alt: #450057;
+}
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.8;
+}
+
+img {
+  width: 100%;
+}
+
+/*
+================
+Navbar
+================
+*/
+header {
+  width: 100%;
+  height: 70px;
+  background: var(--light);
+  color: var(--pry);
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--pry);
+}
+
+header a {
+  font-family: 'Cantarell', sans-serif;
+  color: var(--sec);
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: var(--pry);
+}
+
+header ul {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+/*
+================
+Search
+================
+*/
+.form {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.form input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--pry);
+  outline: none;
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+.form input:focus {
+  border-color: var(--sec);
+  transform: translateY(5px);
+}
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 0.5rem;
+}
+
+/*
+================
+More global CSS
+================
+*/
+
+.container {
+  max-width: 768px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 5px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  display: inline-block;
+  background: var(--sec);
+  color: var(--light);
+  font-family: 'Ubuntu', sans-serif;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  transition: 0.3s all ease-in-out;
+}
+
+.btn:hover {
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.btn-back {
+  background: var(--error);
+  color: var(--light);
+  margin-bottom: 20px;
+}
+
+/*
+================
+Post and Card
+================
+*/
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 0.5rem;
+}
+
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 15px;
+  border: 1px solid var(--pry);
+  transition: 0.3s all ease-in-out;
+}
+
+.card:hover {
+  transform: scale(0.98);
+}
+
+.card-page {
+  padding: 15px 30px;
+}
+
+.post-title {
+  margin: 10px 0;
+}
+
+.post-date {
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dark);
+  color: var(--light);
+  padding: 3px 10px;
+}
+
+.post-date p {
+  margin: 0;
+}
+
+.post-contact {
+  color: var(--sec);
+  font-size: 1.5rem;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.post-body {
+  margin-top: 15px;
+}
+
+.post-body ul, ol {
+  font-size: 110%;
+  line-height: 2.3;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.post-body pre {
+  background: var(--dark);
+  color: var(--light);
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 2.3;
+}
+
+.post-body a {
+  font-weight: 600;
+  color: var(--pry);
+  text-decoration: underline;
+}
+
+.post-body img {
+  width: 60%;
+  position: relative;
+  left: 20%;
+  margin: 30px 0;
+}
+
+/*
+================
+Buy me a coffee
+================
+*/
+
+.bmc {
+  width: 100%;
+  height: 550px;
+  margin-bottom: 50px;
+  border: none;
+  border: 1px solid var(--pry);
+}
+
+.buyButton {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  color: var(--pry);
+  background-color: transparent;
+  border: 1px solid var(--pry);
+  padding: 15px 0;
+  margin: 20px 0 40px;
+  font-size: 1.5rem;
+  letter-spacing: 0.6px;
+  transition: 0.5s all ease;
+}
+
+.buyButton:hover {
+  transform: scale(1.1);
+}
+
+.coffeeImage {
+  height: 50px;
+  box-shadow: none;
+  border: none;
+  vertical-align: middle;
+}
+
+.coffeeButtonText {
+  width: 150%;
+  margin-left: 10px;
+  font-family: 'Cantrell', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/*
+================
+Media queries
+================
+*/
+@media screen and (max-width: 500px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+
+  header a {
+    font-size: 0.9rem;
+  }
+
+  header ul {
+    width: 30%;
+  }
+
+  .comment {
+    width: 100%;
+    padding: 0;
+  }
+
+  .comment textarea {
+    width: 100%;
+  }
+}
